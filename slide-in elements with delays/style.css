@@ -1,0 +1,73 @@
+* {
+    box-sizing:border-box;
+}
+html,body {
+    width:100%;
+    height:100%;
+    padding:0px;
+    margin:0px;
+}
+.container {
+    position:relative;
+    width:950px;
+    height:780px;
+    margin:auto;
+    background-color:#386641;
+    border: groove 5px #ccff33;
+    overflow:hidden;
+}
+img {
+    height:700px;
+    position:absolute;
+    top:-700px;
+    left:40px;
+    animation-name: my-minions;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes my-minions {
+    from {  top:-500px;   }
+    to { top: 40px;  }
+}
+h1 {
+    position:absolute;
+    top:30px;
+    left: 165px;
+    margin-left:1050px;
+    color:#ccff33;
+
+    animation-name: my-text;
+    animation-delay: 2s;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes my-text {
+    from {margin-left:800px; }
+    to { margin-left: 330px; }
+}
+.discription {
+    position:absolute;
+    top:650px;
+    left:500px;
+    width:400px;
+    color:#affc41;
+
+    animation-name: my-ptag;
+    animation-delay: 2.5s;
+    animation-duration: .7s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes my-ptag {
+    from { top:630px; }
+    to { top: 80px;
+    }
+}
+
